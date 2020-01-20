@@ -1,0 +1,6 @@
+django
+graphene-django
+APScheduler
+sentry-sdk
+jira
+Pillow
