@@ -18,4 +18,5 @@ class Query(object):
         return User.objects.all()
 
     def resolve_all_superusers(self, info, **kwargs):
+
         return User.objects.filter(is_superuser=True)
