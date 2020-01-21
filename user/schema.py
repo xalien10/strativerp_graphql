@@ -12,6 +12,10 @@ class UserType(DjangoObjectType):
 
 class Query(object):
     all_users = graphene.List(UserType)
+    all_superusers = graphene.List(UserType)
 
     def resolve_all_users(self, info, **kwargs):
         return User.objects.all()
+
+    def resolve_all_superusers(self, info, **kwargs):
+        return User.objects.filter(is_superuser=True)

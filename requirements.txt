@@ -4,3 +4,6 @@ APScheduler
 sentry-sdk
 jira
 Pillow
+graphene-file-upload
+django-graphql-jwt
+graphene-django-optimizer
